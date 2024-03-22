@@ -1,0 +1,257 @@
+/* Grupo: 25, Número: 36207, Nome: Nelson Sousa, PL: 22
+   Grupo: 25, Número: 59348, Nome: Dmytro Umanskyi, PL: 22 */
+
+
+/*creates box*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*sets height for the page*/
+html{
+    height: 100%;
+}
+
+/*start header/footer style*/
+header, footer{
+    padding: 15px;
+	padding-bottom: 10px;
+}
+header{
+    margin-top: 20px;
+    width: 100%;    
+}
+/*end header/footer style*/
+
+/*body style + bg image*/
+body{
+    min-height: 100%;
+    flex-direction: column;
+    background-image: url("../media/bg-02-01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Style for eye icon */
+#showHidePassword{
+  margin-left: 10px;
+}
+
+/*start nav style*/
+nav{
+    width: 100%;
+}
+.nav-bar {
+    margin: 0;
+    padding: 0;  
+    display: flex;
+    align-items: center;
+    flex-direction: row;	
+}
+nav, a{      
+    display: inline;
+    float: left;
+	text-align: center;
+	padding: 0px 14px;
+	text-decoration: none;
+	font-size: 17px;
+	color: white;
+}
+/*end nav style*/
+.registerParagraph{
+	font-size: 17px;
+	margin: 20px 10px 0px 0px;
+}
+
+.exceptionLink{
+	float: none;
+	padding: 0px;
+	text-decoration: underline wavy;  
+	font-weight: bold;
+    text-decoration-color: cyan;  
+}
+
+/*logo settings*/
+#logo{
+    height: 20px;
+    padding-left: 20px;
+}
+
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+.video{
+  width: 100%;
+}
+
+.login, .registry, .configurations, .table{
+    padding: 2vw;
+    text-align: left;
+    width: 40%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#button_rules{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Begin Single Game page */
+
+
+/* End Single Game page */
+
+nav a.split{
+    right: 1em;
+	float: right;
+}
+
+.center{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-radius: 5px;
+  }
+  
+/*Start of Statistics/Rules grid*/
+  #content {
+  margin-top: 2ex;
+  margin: auto;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    'firstColumn secondColumn';
+}
+
+#firstColumn {
+  grid-area: firstColumn; 
+  height: 100%;
+  width: 90%;
+}
+
+#secondColumn {
+  grid-area: secondColumn;
+  width: 90%;
+}
+
+#rules{
+	margin-top: 20px;
+	text-align: justify;
+}
+/* End Statistics/Rules grid*/
+
+#funcDiff{
+	margin-bottom: 20px;
+}
+
+/* Start style for buttons */
+.button{
+  font-size: 16px;
+  padding: 7px 30px 7px;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  color: white;
+}
+
+.button:after{
+  content: "";
+  background-color: #00FEFA;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button:hover:after{
+  top: 0px;
+  left: 0px;
+}
+/* End style for buttons */
+
+/*Styles to be applied for small screens*/
+
+@media only screen and (max-width: 599px) {
+.button {
+    padding: 4px 15px 4px;
+  }
+  
+.button:after {
+  top: 4px;
+  left: 4px;
+}
+
+#content {
+	margin-top: 2ex;
+	margin: auto;
+	width: 90%;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto;
+	grid-template-areas:
+		'firstColumn'
+		'secondColumn';
+}
+
+#firstColumn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  grid-column: 1/2;
+  padding: 20px;
+  text-align: center;
+}
+#secondColumn{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body{
+	background-size: auto;
+}
+
+h1{
+	font-size: 20px; 	
+}
+
+a, th, td, li, .button{      
+	font-size: 12px;
+}
+
+#rules_but{
+  margin-top: auto;
+}
+
+video, #single_game{
+  width: 100%;
+  height: auto;
+  grid-column: 2/3;
+  margin-left: 20px;
+}
+
+}

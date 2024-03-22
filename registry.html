@@ -1,0 +1,63 @@
+<!-- Grupo: 25, Número: 36207, Nome: Nelson Sousa, PL: 22 -->
+<!-- Grupo: 25, Número: 59348, Nome: Dmytro Umanskyi, PL: 22 -->
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<link rel="stylesheet" href="style/style.css">
+		<link rel="stylesheet" href="style/position.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+		<script src="scripts/registry.js"></script>
+		<title>New player</title>
+		<link rel="icon" type="image/x-icon" href="media/favicon.ico">		
+	</head> 
+	<body> 
+		<header>
+			<div class="nav-bar">
+				<a href="registry.html"><img src="media/top_nav_image.PNG" alt="Bejeweled icon"></a>
+				<nav>
+					<a href="home.html">Home</a>
+					<a class="active" href="registry.html">Registry</a>
+				</nav>
+			</div>
+		</header>
+			
+		<form id="formRegistry" class="registry">
+			<h1>Create new player</h1> 
+			<div><label for="name">Name and surname</label><input type="text" id="name" name="name" required>
+			<span id="name-error"></span></div>
+			<div><label for="email">E-mail</label><input type="email" id="email" name="email" required>
+			<span id="email-error"></span></div>
+			<div><label for="nickname">Nickname</label><input type="text" id="nickname" name="nickname" placeholder="Example 'Pumpkin'" required>
+			<span id="nickname-error"></span></div>
+			<div><label for="age">Age
+						<select name="age" id="age" required>
+							<option value="" label="Select..."></option>
+							<option value="teenage" label="3-17"></option>
+							<option value="adult" label="18-40"></option>
+							<option value="midlife" label="41-65"></option>
+							<option value="senior" label="Above 66"></option> 
+						</select></label>
+						<span id="age-error"></span></div>
+			<div><label for="gender">Gender
+						<select name="gender" id="gender" required>
+							<option value="" label="Select..."></option>
+							<option value="female" label="Female"></option>
+							<option value="male" label="Male"></option>
+						</select></label>
+						<span id="gender-error"></span></div>
+			<div><label for="password">Password</label><i class="far fa-eye" id="showHidePassword"></i>
+				<input type="password" id="password" name="password" required>
+				<span id="password-error"></span></div>
+			<div><label for="confirm-password">Confirm password</label><input type="password" id="confirm-password" name="confirm-password" required>
+				<span id="confirm-password-error"></span></div>
+
+			<button type="submit" class="button">Create new player</button>
+		</form>
+
+		<footer>
+			<p>Group 25: Nelson Sousa &amp; Dmytro Umanskyi</p>
+		</footer>
+			
+	</body> 
+</html>

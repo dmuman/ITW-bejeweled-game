@@ -1,0 +1,137 @@
+<!-- Grupo: 25, Número: 36207, Nome: Nelson Sousa, PL: 22 -->
+<!-- Grupo: 25, Número: 59348, Nome: Dmytro Umanskyi, PL: 22 -->
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style/style.css">
+		<link rel="stylesheet" href="style/position.css"> 
+		<script src="scripts/scripts.js"></script>
+		<script src="scripts/statistics_page.js"></script>
+		<title>Statistics</title> 
+		<link rel="icon" type="image/x-icon" href="media/favicon.ico">
+    </head> 
+    <body>
+		<header>
+            <div class="nav-bar">
+                <a href="statistics.html"><img src="media/top_nav_image.PNG" alt="Bejeweled icon"></a>
+                <nav>
+					<a href="configurations.html">New game</a>
+					<a class="active" href="statistics.html">Statistics</a>
+					<a href="rules.html">Rules</a>
+                    <span id="nickname"></span><a href="home.html" class="split" id="logout">Logout</a>
+                </nav>
+            </div>
+        </header>
+		
+		<div id="content">
+			<div id="firstColumn" class="table">
+				<h1><span id="singlePlayer"></span> player statistics</h1> 
+				<table class="center">
+				<tr>
+					<td>Number of games</td>
+					<td id="nrGames">0</td>
+				</tr>
+				<tr>
+					<td>Total time played</td>
+					<td id="timePlayed">0</td>
+				</tr>
+				<tr>
+					<td>Total score</td>
+					<td id="totalScore">0</td>
+				</tr>
+				<tr>
+					<td>High score 8x8</td>
+					<td id="highScore8x8">0</td>
+				</tr>
+				<tr>
+					<td>High score 9x9</td>
+					<td id="highScore9x9">0</td>
+				</tr>
+				<tr>
+					<td>High score 10x10</td>
+					<td id="highScore10x10">0</td>
+				</tr>
+				<tr>
+					<td>High score with time (8x8)</td>
+					<td id="highScoreTimer">0</td>
+				</tr>
+			</table>
+			</div>
+        
+        <div id="secondColumn" class="table"> 
+			<h1>Top players</h1>
+			<div><label for="gameMode">Game mode
+				<select name="gameMode" id="gameMode">
+					<option value="8x8" label="8x8"></option>
+					<option value="9x9" label="9x9"></option>
+					<option value="10x10" label="10x10"></option>
+					<option value="withTimer" label="with timer (8x8)"></option> 
+				</select></label>
+				<span id="age-error"></span></div>
+			<table class="center">
+				<tr>
+					<th scope="col">Place</th>
+					<th scope="col">Player's nickname</th>
+					<th scope="col">Points</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td id="player1">Player 1</td>
+					<td id="player1score">Amount</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td id="player2">Player 2</td>
+					<td id="player2score">Amount</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td id="player3">Player 3</td>
+					<td id="player3score">Amount</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td id="player4">Player 4</td>
+					<td id="player4score">Amount</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td id="player5">Player 5</td>
+					<td id="player5score">Amount</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td id="player6">Player 6</td>
+					<td id="player6score">Amount</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td id="player7">Player 7</td>
+					<td id="player7score">Amount</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td id="player8">Player 8</td>
+					<td id="player8score">Amount</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td id="player9">Player 9</td>
+					<td id="player9score">Amount</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td id="player10">Player 10</td>
+					<td id="player10score">Amount</td>
+				</tr>
+			</table>
+        </div>
+		</div>
+
+        <footer>
+            <p>Group 25: Nelson Sousa &amp; Dmytro Umanskyi
+            </p>
+        </footer>
+    </body> 
+</html>

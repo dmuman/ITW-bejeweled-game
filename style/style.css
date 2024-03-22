@@ -1,0 +1,125 @@
+/* Grupo: 25, Número: 36207, Nome: Nelson Sousa, PL: 22
+   Grupo: 25, Número: 59348, Nome: Dmytro Umanskyi, PL: 22 */
+
+*{
+  font-family: Arial, Helvetica, sans-serif; /*font*/
+}
+
+/*text and bg color for elements*/
+header, .login, .registry, .configurations, .table{
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/*rounded corners*/
+.login, .registry, .configurations, .table, .video{
+	border-radius: 5px;
+  }
+/* Begin style image nav top */
+img{
+	width: auto; 
+	height: 45px;
+}
+/* End style image nav top */
+
+/*default list for the div.nav-bar*/
+.nav-bar{
+  list-style-type: none;
+}
+
+/*text color for links in nav*/
+nav, a{
+  color: #f2f2f2;
+}
+
+/*links changes color when hover*/
+nav a:hover{
+  color: aquamarine;
+}
+
+/*color for active link*/
+.active{
+  color: aquamarine;
+}
+
+/*link color for the split element*/
+nav a.split {
+	color: #f2f2f2;
+}
+
+/*link color for the split element when hover*/
+nav a.split:hover {
+	color: aquamarine;
+}
+
+/*style for the footer*/
+footer {
+    background: black;
+    color: antiquewhite;
+}
+
+/*begin style for the table and its elements*/
+.table{
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 6px;
+}
+
+tr:nth-child(even) {
+	background-color: #3F5859;
+}
+
+th{
+	font-size: 20px;
+}
+
+h1{
+	margin-bottom: 25px;
+}
+
+li{
+	display: block;
+}
+/*end style for the table and its elements*/
+
+input, select {
+  display: block;
+  width: 100%;
+  margin: 2px 0px 5px 0px;
+  padding: 2px 5px 0px 5px;
+}
+
+/*some style for the button*/
+form{
+	display: inline;
+	padding-right: 10px;
+}
+
+/*Override above width value only for dropdown boxes*/
+select {
+	width: auto;
+}
+
+/*Styles for error messages - Registry and login page*/
+.registry span{
+	position: relative;
+	bottom: 5px;
+	font-size: 12px;
+	color: red;
+}
+
+.login span{
+	position: relative;
+	bottom: 5px;
+	font-size: 12px;
+	color: red;
+}
+
+/*Styles for valid messages - Registry page*/
+.registry #spanValid{
+	color: green;
+}

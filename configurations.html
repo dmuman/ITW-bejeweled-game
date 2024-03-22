@@ -1,0 +1,71 @@
+<!-- Grupo: 25, Número: 36207, Nome: Nelson Sousa, PL: 22 -->
+<!-- Grupo: 25, Número: 59348, Nome: Dmytro Umanskyi, PL: 22 -->
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<link rel="stylesheet" href="style/style.css">
+		<link rel="stylesheet" href="style/position.css">
+		<script src="scripts/configurations_page.js"></script>
+		<script src="scripts/scripts.js"></script>
+		<title>New game</title> 
+		<link rel="icon" type="image/x-icon" href="media/favicon.ico">
+	</head> 
+
+	<body> 
+	    <header>
+            <div class="nav-bar">
+                <a href="configurations.html"><img src="media/top_nav_image.PNG" alt="Bejeweled icon"></a>
+                <nav>
+					<a class="active" href="configurations.html">New game</a>
+                    <a href="statistics.html">Statistics</a>
+					<a href="rules.html">Rules</a>
+                    <span id="nickname"></span><a href="home.html" class="split" id="logout">Logout</a>
+                </nav>
+            </div>
+        </header>
+		
+		<div class="configurations">
+			<h1>Configurations for new game</h1> 
+			
+		 	<label for="grid">Difficulty<select name="grid" id="grid">
+				<option value="easy">8x8</option>
+				<option value="medium">9x9</option>
+				<option value="hard">10x10</option>
+			</select></label>
+				
+			
+			<!-- Place where fucntion changeDiffDescription() will replace difficulty text -->
+			<p id="funcDiff">* Easy - grid with 8 columns x 8 rows and 20 pieces to be deleted</p>
+			
+		 	<label for="setTimer">Set timer<select name="setTimer" id="setTimer">
+				<option value="withoutTimer">without timer</option>
+				<option value="withTimer">with timer</option>
+				</select></label>
+			<p id="funcTimer"></p>
+			
+			<br>
+			
+			<label for="selectPieces">Select game pieces<select name="selectPieces" id="selectPieces">
+				<option value="crystals">Crystals</option>
+				<option value="gums">Gums</option>
+			</select></label>
+			<br>
+
+			<label for="selectBackground">Select game background<select name="selectBackground" id="selectBackground">
+				<option value="crystals_theme">Crystals</option>
+				<option value="gums_theme">Gums</option>
+				<option value="custle_theme">Castle</option>
+			</select></label>
+			</br>
+					
+			<button class="button" id="startGame">Start single game</button>
+			
+			<button class="button" onclick="alert('Feature not yet available! Please, play single game.')">Start multiplayer game</button>
+		</div>
+		
+		<footer>
+            <p>Group 25: Nelson Sousa &amp; Dmytro Umanskyi</p>
+        </footer>
+	</body> 
+</html>

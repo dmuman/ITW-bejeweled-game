@@ -1,0 +1,67 @@
+<!-- Grupo: 25, Número: 36207, Nome: Nelson Sousa, PL: 22 -->
+<!-- Grupo: 25, Número: 59348, Nome: Dmytro Umanskyi, PL: 22 -->
+
+<!DOCTYPE html> 
+<html lang="en"> 
+	<head> 
+		<meta charset="utf-8"> 
+		<link rel="stylesheet" href="style/style.css">
+		<link rel="stylesheet" href="style/position.css">
+		<link rel="stylesheet" href="style/boardGame.css">
+		<script src="scripts/boardGame.js"></script>
+		<script src="scripts/scripts.js"></script>
+	
+		<title>Single game</title> 
+		<link rel="icon" type="image/x-icon" href="media/favicon.ico">
+	</head> 
+
+	<body> 
+	    <header>
+            <div class="nav-bar">
+                <a href="single_game.html"><img src="media/top_nav_image.PNG" alt="Bejeweled icon"></a>
+                <nav>
+					<a class="active" href="configurations.html">New game</a>
+                    <a href="statistics.html">Statistics</a>
+					<a href="rules.html">Rules</a>
+                    <span id="nickname"></span><a href="home.html" class="split" id="logout">Logout</a>
+                </nav>
+            </div>
+        </header>
+		
+		<div id="content">
+            <div id="firstColumn" class="table">
+			<h1>Score</h1>
+			<div id="score">
+				<span id="currentScore">0</span>
+			</div>
+			<br>
+			<h1>Goal</h1>
+				<p>Number of pieces to be deleted: <span id="goalPieces">0</span></p>
+				<p>Number of pieces already deleted: <span id="currentGoalPieces">0</span></p>
+			<br>
+			<h1><span id="timeDescription"></span></h1>
+			<p><span id="timerRunning"></span><span id="time">0</span> seconds</p>
+			<div id="progressBar">
+				<div id="myBar"></div>
+			</div>
+			<br>
+				<button class="button" id="hint">Show hint</button>
+			<br><br>
+				<button class="button" id="reset">Reset game</button>
+			<br><br>
+				<button class="button" id="finish">Finish game</button>
+
+			</div>
+
+			<div id="secondColumn"> 
+				<table id="boardGame">
+				<!-- Table created dinamically in function createBoard -->
+				</table>
+			</div>
+		</div>
+		
+		<footer>
+            <p>Group 25: Nelson Sousa &amp; Dmytro Umanskyi</p>
+        </footer>
+	</body> 
+</html>

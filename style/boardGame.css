@@ -1,0 +1,55 @@
+/* Grupo: 25, Número: 36207, Nome: Nelson Sousa, PL: 22
+   Grupo: 25, Número: 59348, Nome: Dmytro Umanskyi, PL: 22 */
+
+
+tr:nth-child(even) td:nth-child(even), tr:nth-child(odd) td:nth-child(odd) {
+  background: #4D3A2C;
+}
+tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd) {
+  background: #442914;
+}
+
+td {
+  height: 65px;
+  border-radius: 0px;
+  border: 0px;
+}
+
+#boardGame {
+	border: 1px solid #000000;
+	padding: 6px;
+	background: #000000;
+}
+
+#progressBar {
+  width: 90%;
+  background-color: #FFFFFF;
+}
+
+#myBar {
+  width: 0%;
+  height: 20px;
+  background-color: aquamarine;
+}
+
+.drag-over {
+    border: dotted 2px red;
+}
+
+.hide {
+    border: 0px;
+}
+
+#score{
+  background: rgba(127, 255, 212, 0.7);
+  text-align: center;
+  border-radius: 10px;
+  width: 90px;
+  padding: 15px 10px 10px 10px;
+  font-size: 50px;
+}
+
+h1{
+	margin: 0px;
+	padding: 0px, 0px, 0px, 5px;
+}
